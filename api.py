@@ -1,7 +1,7 @@
 import json
 from flask import Blueprint, jsonify
 
-api = Blueprint('api', __name__)
+api = Blueprint('api', "PapiApi")
 
 
 @api.route("/")
