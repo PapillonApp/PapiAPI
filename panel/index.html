@@ -7,6 +7,76 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        header {
+            background-color: #30ab8d;
+            font-family: "Roboto", sans-serif;  
+            border-radius: 25px;
+            color: #fff;
+            font-size: 150%;
+            margin: 1%;
+            padding: 1%;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 95%;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        
+        nav a:hover {
+            background-color: #298972;
+        }
+        
+        .api-response-container {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            box-sizing: border-box; 
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .api-response-title {
+            margin-top: 0;
+        }
+        
+        h2 {
+            font-family: 'Onest', sans-serif;
+            font-size: 200%;
+            text-align: center;
+        }
+        
+        h3 {
+            font-family: 'Onest', sans-serif;
+            font-size: 150%;
+            text-align: center;
+            color: #30ab8d;
+        }
+        
+        #logo{
+            margin-top: 3%;
+            width: 40%;
+            height: 40%;
+        
+        }</style>
 </head>
 <body>
     <header>
@@ -39,6 +109,23 @@
     </div>
 
 
-    <script src="script.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        async function fetchAPI(endpoint, elementId) {
+            try {
+                const response = await fetch(endpoint);
+                const data = await response.json();
+                const apiResponseCodeElement = document.getElementById(elementId);
+                apiResponseCodeElement.textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                console.error('Une erreur s\'est produite :', error);
+            }
+        }
+    
+    
+        fetchAPI('http://127.0.0.1:5000/staff', 'apiResponse');
+        fetchAPI('http://127.0.0.1:5000/warning', 'apiResponse2'); 
+        fetchAPI('http://127.0.0.1:5000/disclaimerIE', 'apiResponse3'); 
+    });
+    </script>
 </body>
 </html>
