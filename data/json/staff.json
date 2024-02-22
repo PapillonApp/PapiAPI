@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Prénom Nom",
+        "department": "Equipe",
+        "email": "prenom.nom@getpapillon.xyz",
+        "photo": "https://api.getpapillon.xyz/staff/vincelinise/photo"
+    },
+    {
+        "name": "Prénom Nom",
+        "department": "Equipe",
+        "email": "prenom.nom@getpapillon.xyz",
+        "photo": "https://api.getpapillon.xyz/staff/emmanuelmacron/photo"
+    },
+    {
+        "name": "Prénom Nom",
+        "department": "Equipe",
+        "email": "prenom.nom@getpapillon.xyz",
+        "photo": "https://api.getpapillon.xyz/staff/oliviercalderon/photo"
+    }
+]
