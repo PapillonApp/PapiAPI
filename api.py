@@ -28,6 +28,11 @@ def disclaimerIE():
         disclaimerIEFile = json.load(file)
     return jsonify(disclaimerIEFile)
 
+@api.route("/latestVersion/<string:platform>")
+def latestVersion(platform):
+    with open(f"data/json/latestVersion{platform}.json", "r") as file:
+        latestVersionFile = json.load(file)
+    return jsonify(latestVersionFile)
 
 @api.route("/staff/<string:name>/photo")
 def staffPhoto(name):
