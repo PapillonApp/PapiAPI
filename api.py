@@ -16,17 +16,11 @@ def staff():
         staffFile = json.load(file)
     return jsonify(staffFile)
 
-@api.route("/warning")
-def warning():
-    with open("data/json/warning.json", "r") as file:
-        warningFile = json.load(file)
-    return jsonify(warningFile)
-
-@api.route("/disclaimerIE")
+@api.route("/messages")
 def disclaimerIE():
-    with open("data/json/disclaimerIE.json", "r") as file:
-        disclaimerIEFile = json.load(file)
-    return jsonify(disclaimerIEFile)
+    with open("data/json/messages.json", "r") as file:
+        messagesfile = json.load(file)
+    return jsonify(messagesfile)
 
 @api.route("/latestVersion/<string:platform>")
 def latestVersion(platform):

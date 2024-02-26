@@ -11,7 +11,7 @@ docker build -t papillon-api .
 ```
 Lancez le conteneur Docker :
 ```bash
-docker run -p 5000:5000 papillon-api
+docker run -d -p 5000:5000 papillon-api
 ```
 ## Utilisation de Flask
 Si vous préférez exécuter l'API directement sans Docker, suivez ces étapes :
@@ -31,7 +31,6 @@ python app.py
 ## Les différents endpoints
 - GET /api : Version de l'api
 - GET /staff : Liste des membres de l'équipe
-- GET /warning : Message d'avertissement
-- GET /disclaimerIE : Message d'avertissement concernant la non-affilitation à Index Éducation
+- GET /messages : Liste de tous les messages de l'app
 - GET /latestVersion/plateforme : Dernière version de l'application pour la plateforme en question
 
