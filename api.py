@@ -10,9 +10,9 @@ def root():
             apiFile = json.load(file)
         return jsonify(apiFile)
     
-@api.route("/staff")
+@api.route("/team")
 def staff():
-    with open("data/json/staff.json", "r") as file:
+    with open("data/json/team.json", "r") as file:
         staffFile = json.load(file)
     return jsonify(staffFile)
 

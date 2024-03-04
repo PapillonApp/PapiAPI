@@ -30,7 +30,7 @@ python app.py
 
 ## Les différents endpoints
 - GET /api : Version de l'api
-- GET /staff : Liste des membres de l'équipe
+- GET /team : Liste des membres de l'équipe
 - GET /messages : Liste de tous les messages de l'app
 - GET /latestVersion/plateforme : Dernière version de l'application pour la plateforme en question
 
