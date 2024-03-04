@@ -1,13 +1,14 @@
-[
-    {
-        "message": "disclaimerie",
-        "title": "IMPORTANT",
+{
+    "Index Education": {
+        "title": "Important",
         "content": "Papillon n'est pas affilié à Index Education. Des bugs peuvent survenir lors de l'utilisation de PRONOTE sur Papillon."
     },
-    {
-        "message": "warning",
+    "Kosmos": {
+        "title": "Important",
+        "content": "Papillon n'est pas affilié à Kosmos. Des bugs peuvent survenir lors de l'utilisation de Skolengo sur Papillon."
+    },
+    "warning": {
         "title": "Attention",
         "content": "Papillon est encore en bêta, des bugs peuvent survenir !"
     }
-]
-
+}
