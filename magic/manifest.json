@@ -17,6 +17,24 @@
       "download_url": "https://raw.githubusercontent.com/PapillonApp/PapiAPI/main/magic/upload/Luma_25104D.magic",
       "build_id": "25104D",
       "build_type": "alpha"
+    },
+    {
+      "name": "Luma",
+      "version": "25906B",
+      "author": "Papillon",
+      "date_created": "2025-09-15",
+      "parameters": {
+        "oovIndex": 1,
+        "maxLen": 128
+      },
+      "compatible_versions": [
+        ">=8.1.0"
+      ],
+      "size_bytes": 5928837,
+      "sha256": "0a04bc91a3a3789b57a93d145795c2104ab7e619652fadb7330e26722d61721a",
+      "download_url": "https://raw.githubusercontent.com/PapillonApp/PapiAPI/main/magic/upload/Luma_25906B.magic",
+      "build_id": "25906B",
+      "build_type": "rc"
     }
   ]
 }
